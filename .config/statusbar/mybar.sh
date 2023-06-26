@@ -248,11 +248,11 @@ do
 
   # VPN click
   if [[ $line == *"name"*"id_vpn"* ]]; then
-    gnome-terminal -- $HOME/.config/i3status/click_vpn.sh >/dev/null  2>&1 &
+    gnome-terminal -- $HOME/.config/statusbar/click_vpn.sh >/dev/null  2>&1 &
 
   # CHECK UPDATES
   elif [[ $line == *"name"*"id_systemupdate"* ]]; then
-    gnome-terminal -- $HOME/.config/i3status/click_checkupdates.sh &
+    gnome-terminal -- $HOME/.config/statusbar/click_checkupdates.sh &
 
   # CPU
   elif [[ $line == *"name"*"id_cpu_usage"* ]]; then
@@ -260,7 +260,7 @@ do
 
   # TIME
   elif [[ $line == *"name"*"id_time"* ]]; then
-    gnome-terminal -- $HOME/.config/i3status/click_time.sh >/dev/null 2>&1 &
+    gnome-terminal -- $HOME/.config/statusbar/click_time.sh >/dev/null 2>&1 &
 
   # METEO
   elif [[ $line == *"name"*"id_meteo"* ]]; then
