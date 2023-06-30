@@ -36,7 +36,7 @@ myspotify() {
   separator $bg $bg_bar_color
   echo -n ",{"
   echo -n "\"name\":\"id_spotify\","
-  echo -n "\"full_text\":\" $(${HOME}/.config/statusbar/spotify.py) \","
+  echo -n "\"full_text\":\" $($HOME/.config/statusbar/spotify.py | sed -e 's/\"/\\\"/g' ) \","
   echo -n "\"color\":\"#000000\","
   echo -n "\"background\":\"$bg\","
   common
